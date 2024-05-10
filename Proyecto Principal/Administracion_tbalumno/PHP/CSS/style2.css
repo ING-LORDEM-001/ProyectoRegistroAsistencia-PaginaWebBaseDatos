@@ -1,0 +1,359 @@
+:root {
+    --fuente-general: font-family: 'Inconsolata', monospace;
+
+}
+
+html {
+  font-size: 100%; 
+  text-align: center;
+  overflow-y: hidden;
+  color: #f2f2f2;
+  letter-spacing: 2px;
+}
+
+ 
+  h1 {
+    font-size: 2.197em; 
+    font-family: var(--fuente-general);
+  }
+  h2 {
+    font-size: 1.69em; 
+  }
+  h3 {
+    font-size: 1.3em; 
+  }
+
+  header {
+    display: flex;
+    justify-content: center;
+}
+
+input {
+  background-color: #00000000;
+  color: #f2f2f2;
+  border-radius: 10px;
+}
+
+input::placeholder {
+  color: #f2f2f2;
+  
+}
+
+.gradient-background {
+  background: linear-gradient(128deg,#4598d1,#83d1b0,#2c1a07,#2b74dc);
+  background-size: 240% 240%;
+  animation: gradient-animation 8s ease infinite;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+
+  /*barra lateral*/
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ddd;
+  }
+  
+  .sidebar__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 30px;
+  }
+  
+  .sidebar__menu {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .sidebar__link {
+    display: block;
+    padding: 20px;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color .5s, color 0.7s;
+    border-radius: 5px;
+  }
+
+  .sidebar__link--agregada {
+    display: inline-block;
+    padding: 20px;
+    width: 52%;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color .5s, color 0.7s;
+    border-radius: 5px;
+  }
+
+  .sidebar__link--agregada:hover {
+    background-color: #000000;
+    color: #f2f2f2;
+  }
+
+  .sidebar__link--delete {
+    padding: 20px;
+    width: 50%;
+    color: #333;
+    text-decoration: none;
+    text-align: center;
+    transition: background-color .5s, color 0.7s;
+    border-radius: 5px;
+  }
+
+  .sidebar__link--delete:hover {
+    background-color: red;
+    color: #000;
+  }
+  
+  .sidebar__link:hover{
+    background-color: #000000;
+    color: #f2f2f2;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 100%;
+    background-color: #f2f2f2;
+    border-right: 1px solid #ddd;
+    padding-bottom: 10px; /* Añade espacio para el botón */
+  }
+  
+  .sidebar__button {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+  }
+  
+  .sidebar__button:hover {
+    background-color: #000;
+  }
+
+  .agregar__materia--box {
+    position: absolute;
+    text-align: center;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 10px 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .agregar__materia--box.mostrar {
+    opacity: 1;
+  }
+
+  .agregar__materia--input {
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+  }
+
+  .agregar__materia--btn {
+    margin-top: 5px;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    background-color: #00000069;
+  }
+
+  /*Vista de cada materia*/
+
+  .materia__box {
+    display: flex;
+    justify-content: center;
+    margin-left: 194px;
+    text-align: center;
+    
+  }
+
+  .materia h1 {
+    font-family: var(--fuente-general);
+  }
+
+  .titulo__pagina {
+    text-align: center;
+    margin-left: 18%;
+    font-family: var(--fuente-general);
+  }
+
+  @media (max-width: 768px){
+      .titulo__pagina {
+        margin-left: 50%;
+        float: right;
+      }
+  }
+
+
+
+  .titulo__pagina--coninputs {
+    text-align: center;
+    margin-left: 42%;
+    font-family: var(--fuente-general);
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 1129%;
+    margin: 10rem -486px;
+    font-family: var(--fuente-general);
+    margin-top: 10rem;
+  }
+
+  
+  
+  thead tr {
+    background-color: #2222226c;
+    color: #fff;
+    text-align: center;
+  }
+  
+  th, td {
+    padding: 12px 15px;
+    border: none;
+  }
+  
+  tbody tr {
+    border-bottom: 1px solid #00000045;
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: none;
+  }
+  
+  tbody tr:nth-of-type(even) {
+    
+  }
+  
+  tbody tr:last-of-type {
+    border-bottom: 2px solid #00000045;
+  }
+  
+  td[data-type="number"] {
+    text-align: right;
+  }
+  
+  
+  
+  th[data-sort] {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  th[data-sort]::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 4px 4px 0 4px;
+    border-color: #fff transparent transparent transparent;
+    opacity: 0.5;
+  }
+  
+  th[data-sort="asc"]::after {
+    border-width: 0 4px 4px 4px;
+    border-color: transparent transparent #fff transparent;
+    opacity: 1;
+  }
+  
+  th[data-sort="desc"]::after {
+    border-width: 4px 4px 0 4px;
+    border-color: #fff transparent transparent transparent;
+    opacity: 1;
+  }
+
+  .agregar__alumno {
+    float: right;
+    margin-right: 4rem;
+    margin-top: .5rem;
+  }
+
+  .agregar__alumno--btn {
+    background-color: #3333334d;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--fuente-general);
+  }
+
+  .agregar__alumno--btn-active {
+    background-color: #fff0;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: var(--fuente-general);
+    letter-spacing: 2px;
+  }
+
+  .agregar__alumno--btn-active:hover {
+    background-color: #0000006e;
+    color: #f2f2f2;
+  }
+
+  .agregar__alumno--btn:hover {
+    background-color: #000;
+  }
+  
+  .oculto {
+    display: none;
+    visibility: hidden;
+    transition: all .5s;
+  }
+
+  .datos__alumno input {
+    margin-left: 1rem;
+    margin-top: 5px;
+    margin-right: -10px;
+    text-align: center;
+    height: 30px;
+  }
+
+  

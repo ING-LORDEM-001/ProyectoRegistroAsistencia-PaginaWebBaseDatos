@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="CSS/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap" rel="stylesheet">
+        <title>Login</title>
+        <link rel="icon" type="image/png" href="/IMG/LOGO.jpg">
+    </head>
+<body class="gradient-background ocultar_scroll">
+    <header class="header">
+        <h1><a href="index.html">Bienidos a SCAR-FACE</h1></a> 
+    </header>
+    <hr>
+    <main>
+
+        <form method="POST" action="login.php">
+        <div class="contenedor_login">
+            <section class="login" id="iniciarSesion">
+                <h1 class="contenedor_login--titulo">Inicio de sesion</h1>
+                <hr style="width: 90%;">
+                <p class="contenedor_login--subtitulo">Ingresa los siguientes datos:</p>
+                <input type="text" class="contenedor_login-input" id="usuario" placeholder="Usuario" name="usuario">
+                <input type="password" class="contenedor_login-input" id="password" placeholder="Contraseña" name="password">
+                    
+                    <input type="submit" class="submit" value="Login" id="submitBtn">
+
+                  
+</form>
+    </main>
+
+
+     <!--  --> 
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+
+</body>
+</html>
